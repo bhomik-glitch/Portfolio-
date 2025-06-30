@@ -16,7 +16,7 @@ const EducationSection = () => {
       school: 'Bharti Public School, Delhi',
       location: '',
       period: '2023',
-      gpa: 'overall percentage - 91%',
+      percentage: '91%',
       stream: 'Science with Maths',
       achievements: []
     },
@@ -71,7 +71,8 @@ const EducationSection = () => {
                       {edu.period}
                     </div>
                     )}
-                    {edu.gpa && <p className="text-white/90 font-medium text-sm">GPA: {edu.gpa}</p>}
+                    {edu.percentage && <p className="text-white/90 font-medium text-sm">Percentage - {edu.percentage}</p>}
+                    {edu.gpa && !edu.percentage && <p className="text-white/90 font-medium text-sm">GPA: {edu.gpa}</p>}
                   </div>
                 </div>
                 {edu.achievements && edu.achievements.length > 0 && (
