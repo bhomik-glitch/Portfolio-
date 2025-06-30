@@ -16,8 +16,9 @@ const EducationSection = () => {
       school: 'Bharti Public School, Delhi',
       location: '',
       period: '2023',
-      gpa: '91%',
-      achievements: ['PCM Stream']
+      gpa: 'overall percentage - 91%',
+      stream: 'Science with Maths',
+      achievements: []
     },
     {
       degree: 'National Defence Academy (NDA) Aspirant',
@@ -61,6 +62,7 @@ const EducationSection = () => {
                     <h4 className="text-lg font-semibold text-white mb-1">{edu.degree}</h4>
                     {edu.school && <p className="text-white/90 font-medium">{edu.school}</p>}
                     {edu.location && <p className="text-white/80 text-sm">{edu.location}</p>}
+                    {edu.stream && <p className="text-white/80 text-sm">Stream: {edu.stream}</p>}
                   </div>
                   <div className="mt-2 md:mt-0 flex flex-col items-start md:items-end">
                     {edu.period && (
