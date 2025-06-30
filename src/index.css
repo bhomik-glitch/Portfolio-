@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Hide scrollbar for webkit browsers */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  transition: all 0.5s ease;
+}
+
+.card {
+  flex: 1;
+  height: 200px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  position: relative;
+  /* Optional: add border and blur if you want to match previous look */
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(4px);
+}
+
+.cards-container:hover .card {
+  flex: 0.9;
+}
+
+.cards-container .card:hover {
+  flex: 1.6;
+}
