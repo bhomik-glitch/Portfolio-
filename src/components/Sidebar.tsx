@@ -8,8 +8,8 @@ interface SidebarProps {
 
 const Sidebar = ({ activeSection, onSectionClick }: SidebarProps) => {
   const categories = [
-    { id: 'top', label: 'About', icon: User },
-    { id: 'about', label: 'Services', icon: Layout },
+    { id: 'about', label: 'About', icon: User },
+    { id: 'services', label: 'Services', icon: Layout },
     { id: 'skills', label: 'Skills', icon: Award },
     { id: 'experience', label: 'Experience', icon: Briefcase },
     { id: 'projects', label: 'Projects', icon: Code },

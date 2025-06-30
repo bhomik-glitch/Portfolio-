@@ -64,26 +64,26 @@ const EducationSection = () => {
                   </div>
                   <div className="mt-2 md:mt-0 flex flex-col items-start md:items-end">
                     {edu.period && (
-                      <div className="flex items-center text-white/80 text-sm mb-1">
-                        <Calendar size={16} className="mr-2" />
-                        {edu.period}
-                      </div>
+                    <div className="flex items-center text-white/80 text-sm mb-1">
+                      <Calendar size={16} className="mr-2" />
+                      {edu.period}
+                    </div>
                     )}
                     {edu.gpa && <p className="text-white/90 font-medium text-sm">GPA: {edu.gpa}</p>}
                   </div>
                 </div>
                 {edu.achievements && edu.achievements.length > 0 && (
-                  <div>
-                    <h5 className="text-white/90 font-medium mb-2">Achievements:</h5>
-                    <ul className="space-y-1">
-                      {edu.achievements.map((achievement, i) => (
-                        <li key={i} className="text-white/80 text-sm flex items-center">
-                          <Award size={14} className="mr-2 text-white" />
-                          {achievement}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                <div>
+                  <h5 className="text-white/90 font-medium mb-2">Achievements:</h5>
+                  <ul className="space-y-1">
+                    {edu.achievements.map((achievement, i) => (
+                      <li key={i} className="text-white/80 text-sm flex items-center">
+                        <Award size={14} className="mr-2 text-white" />
+                        {achievement}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
                 )}
               </div>
             ))

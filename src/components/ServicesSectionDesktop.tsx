@@ -12,49 +12,55 @@ const serviceBoxes = [
 ];
 
 const ServicesSectionDesktop = () => (
-  <div className="services-cards-wrapper">
-    <div className="cards-container flex flex-row gap-5">
-      {serviceBoxes.map((service, idx) => (
-        <a
-          key={idx}
-          href={service.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="card group relative flex flex-col justify-between overflow-hidden transition-all duration-300 cursor-pointer hover:bg-white/5"
-        >
-          {service.logo && (
-            <img src={service.logo} alt={service.alt} className={`w-12 h-12 p-2 brightness-0 invert absolute left-0 bottom-0${idx === 0 ? ' thin-logo' : ''}`} />
-          )}
-          <div className="flex flex-col px-4 pt-4 pb-2">
-            <div className="text-white text-center text-base font-semibold" style={{ marginTop: '10px' }}>{service.heading}</div>
-            <div className="card-content text-white text-sm text-center mt-2 transition-all duration-300 line-clamp-2 group-hover:line-clamp-none">
-              {service.description}
-            </div>
-            <div className="mt-4 flex justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
-              <a
-                href={service.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 bg-gradient-to-r from-[#6A94F5] to-[#A353F2] text-white rounded-lg text-xs font-semibold shadow hover:scale-105 hover:from-[#A353F2] hover:to-[#6A94F5] transition-all duration-200 pointer-events-auto"
-              >
-                click to learn more
-              </a>
-            </div>
-          </div>
-        </a>
-      ))}
+  <div>
+    <div>
+      <h2 className="text-3xl font-bold text-white mb-2">Services</h2>
+      <div className="w-20 h-1 bg-gradient-to-r from-[#6A94F5] to-[#A353F2] rounded-full mb-6"></div>
     </div>
-    <style>{`
-      .thin-logo { transform: scaleX(0.7); }
-      .card-content { flex-grow: 1; overflow: hidden; text-overflow: ellipsis; white-space: normal; word-break: break-word; }
-      .card { padding: 16px; gap: 8px; box-sizing: border-box; height: auto; min-height: 200px; transition: all 0.3s cubic-bezier(0.4,0,0.2,1); overflow: hidden; flex: 1 1 0%; }
-      @media (min-width: 1024px) {
-        .cards-container { display: flex; flex-direction: row; gap: 20px; transition: all 0.5s ease; }
-        .card { flex: 1 1 0%; min-width: 0; height: 220px; transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
-        .cards-container:hover .card { flex: 0.9 1 0%; }
-        .cards-container .card:hover { flex: 2.2 1 0%; z-index: 2; box-shadow: 0 8px 32px 0 rgba(163,83,242,0.15); background: rgba(255,255,255,0.07); }
-      }
-    `}</style>
+    <div className="services-cards-wrapper">
+      <div className="cards-container flex flex-row gap-5">
+        {serviceBoxes.map((service, idx) => (
+          <a
+            key={idx}
+            href={service.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card group relative flex flex-col justify-between overflow-hidden transition-all duration-300 cursor-pointer hover:bg-white/5"
+          >
+            {service.logo && (
+              <img src={service.logo} alt={service.alt} className={`w-12 h-12 p-2 brightness-0 invert absolute left-0 bottom-0${idx === 0 ? ' thin-logo' : ''}`} />
+            )}
+            <div className="flex flex-col px-4 pt-4 pb-2">
+              <div className="text-white text-center text-base font-semibold" style={{ marginTop: '10px' }}>{service.heading}</div>
+              <div className="card-content text-white text-sm text-center mt-2 transition-all duration-300 line-clamp-2 group-hover:line-clamp-none">
+                {service.description}
+              </div>
+              <div className="mt-4 flex justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+                <a
+                  href={service.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-gradient-to-r from-[#6A94F5] to-[#A353F2] text-white rounded-lg text-xs font-semibold shadow hover:scale-105 hover:from-[#A353F2] hover:to-[#6A94F5] transition-all duration-200 pointer-events-auto"
+                >
+                  click to learn more
+                </a>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+      <style>{`
+        .thin-logo { transform: scaleX(0.7); }
+        .card-content { flex-grow: 1; overflow: hidden; text-overflow: ellipsis; white-space: normal; word-break: break-word; }
+        .card { padding: 16px; gap: 8px; box-sizing: border-box; height: auto; min-height: 200px; transition: all 0.3s cubic-bezier(0.4,0,0.2,1); overflow: hidden; flex: 1 1 0%; }
+        @media (min-width: 1024px) {
+          .cards-container { display: flex; flex-direction: row; gap: 20px; transition: all 0.5s ease; }
+          .card { flex: 1 1 0%; min-width: 0; height: 220px; transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
+          .cards-container:hover .card { flex: 0.9 1 0%; }
+          .cards-container .card:hover { flex: 2.2 1 0%; z-index: 2; box-shadow: 0 8px 32px 0 rgba(163,83,242,0.15); background: rgba(255,255,255,0.07); }
+        }
+      `}</style>
+    </div>
   </div>
 );
 

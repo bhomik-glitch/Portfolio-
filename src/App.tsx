@@ -7,6 +7,7 @@ import ExperienceSection from './components/ExperienceSection';
 import ProjectsSection from './components/ProjectsSection';
 import EducationSection from './components/EducationSection';
 import MouseTrail from './components/MouseTrail';
+import AboutSection from './components/AboutSection';
 
 import backgroundVideo from './assets/background/background.mp4'; // Import your video
 import pfpImage from './assets/pfp/pfp.png';
@@ -138,7 +139,11 @@ function App() {
           {/* Main Scrollable Content Area */}
           <div ref={mainContentRef} className="flex-1 overflow-y-auto scrollbar-hide scroll-smooth relative pb-32">
             <div className="p-6 lg:p-8 space-y-12">
-              <HeroSection />
+              {/* About Section */}
+              <section ref={aboutRef} id="about" className="scroll-mt-8">
+                <HeroSection />
+                <AboutSection />
+              </section>
 
               {/* Services Section */}
               <section ref={servicesRef} id="services" className="scroll-mt-8">

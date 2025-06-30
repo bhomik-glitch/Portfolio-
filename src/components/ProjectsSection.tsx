@@ -4,36 +4,45 @@ import { ExternalLink, Github, Star } from 'lucide-react';
 const ProjectsSection = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A modern, responsive e-commerce platform built with React and Node.js featuring real-time inventory management and payment processing.',
-      image: 'https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=500',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      github: '#',
-      demo: '#',
-      stars: 128
+      title: 'Clothing Online Store – Shahad by Nainci',
+      description: 'A modern, elegant, and responsive clothing store for Shahad Boutique. Built with React, TypeScript, Tailwind CSS, and Vite to deliver a seamless and stylish shopping experience.',
+      image: 'https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg?auto=compress&cs=tinysrgb&w=500',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+      github: 'https://github.com/bhomik-glitch/Shadad-online-store',
+      demo: 'https://www.shahadbynainci.com/',
+      stars: 0
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://images.pexels.com/photos/3584994/pexels-photo-3584994.jpeg?auto=compress&cs=tinysrgb&w=500',
-      technologies: ['Vue.js', 'Firebase', 'Vuetify', 'PWA'],
-      github: '#',
-      demo: '#',
-      stars: 89
+      title: 'NCL Systems Pvt Ltd',
+      description: 'A corporate website showcasing the robust IT and telecom services offered by NCL Systems Pvt Ltd. Built using React, TypeScript, and Tailwind CSS for speed and scalability.',
+      image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=500',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS'],
+      github: 'https://github.com/bhomik-glitch/NCL-system',
+      demo: 'https://www.nclsystems.com/',
+      stars: 0
     },
     {
-      title: 'Analytics Dashboard',
-      description: 'Real-time analytics dashboard with interactive charts, data visualization, and customizable reporting features for business intelligence.',
-      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=500',
-      technologies: ['Angular', 'D3.js', 'TypeScript', 'RxJS'],
-      github: '#',
-      demo: '#',
-      stars: 156
+      title: 'NeuroHAD Web App',
+      description: 'A multilingual web platform for neurology clinics, supporting patient access and clinic workflows. Built with React, Vite, and Tailwind CSS for fast, secure performance.',
+      image: 'https://images.pexels.com/photos/3952234/pexels-photo-3952234.jpeg?auto=compress&cs=tinysrgb&w=500',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+      github: 'https://github.com/bhomik-glitch/neuro-hab-',
+      demo: 'https://www.trueraysneurohab.xyz/',
+      stars: 0
+    },
+    {
+      title: 'Invincio Services Platform',
+      description: 'An intuitive platform integrating psychometric insights and military-inspired mentorship, tailored for students, professionals, and institutions. Developed with React and Tailwind CSS.',
+      image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=500',
+      technologies: ['React', 'Tailwind CSS', 'TypeScript'],
+      github: 'https://github.com/bhomik-glitch/invinco',
+      demo: 'https://www.invincioservices.com/',
+      stars: 0
     }
   ];
 
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {projects.map((project, index) => (
         <div
           key={index}
