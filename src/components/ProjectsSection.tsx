@@ -85,6 +85,8 @@ const ProjectsSection = () => {
               </a>
               <a
                 href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-[#6A94F5] to-[#A353F2] text-white text-sm rounded-lg hover:from-[#937BEB] hover:to-[#1F1E52] transition-colors duration-300"
               >
                 <ExternalLink size={16} />
