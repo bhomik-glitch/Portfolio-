@@ -1,5 +1,7 @@
 # Bhomik Pilkhwal Portfolio
 
+> The website is currently live at: https://bhomik.in
+
 A modern, interactive portfolio website built with React and TypeScript. Showcases skills, services, education, and certifications with beautiful animations and responsive design.
 
 ## Features
